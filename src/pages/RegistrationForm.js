@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Registration.css'; // Import CSS file for styling
+import '../styles/Registration.css'; 
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ const RegistrationForm = () => {
     gender: '',
     dateOfBirth: '',
     password: '',
-    role: 'user', // Default role
+    role: 'user', 
     email: '',
   });
 
@@ -21,7 +21,7 @@ const RegistrationForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5001/v1/user/addUser', {
+      const response = await fetch('https://securityboat-jl68.onrender.com/v1/user/addUser', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const RegistrationForm = () => {
       const data = await response.json();
       console.log('User registered successfully:', data);
 
-      // Optionally, reset form fields after successful registration
+      
       setFormData({
         name: '',
         mobile: '',
@@ -47,10 +47,10 @@ const RegistrationForm = () => {
         email: '',
       });
 
-      // Handle any further actions like redirecting to a login page
+     
     } catch (error) {
       console.error('Error registering user:', error);
-      // Handle error, e.g., show error message to user
+     
     }
   };
 
@@ -82,14 +82,7 @@ const RegistrationForm = () => {
           <label>Email:</label>
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
         </div>
-        {/* Role selection can be added if needed */}
-        {/* <div className="form-group">
-          <label>Role:</label>
-          <select name="role" value={formData.role} onChange={handleChange} required>
-            <option value="user">User</option>
-            
-          </select>
-        </div> */}
+
         <button type="submit" className="btn-register">Register</button>
       </form>
     </div>

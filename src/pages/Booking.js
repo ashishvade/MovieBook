@@ -14,7 +14,7 @@ const Booking = () => {
 
   const fetchBookedSeats = async () => {
     try {
-      const response = await fetch(`http://localhost:5001/v1/seat/getAllseat`, {
+      const response = await fetch(`https://securityboat-jl68.onrender.com/v1/seat/getAllseat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
