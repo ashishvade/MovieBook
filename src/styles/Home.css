@@ -1,0 +1,129 @@
+/* styles/Home.css */
+
+/* Homepage styles */
+.homepage {
+    padding: 20px;
+  }
+  
+  /* Carousel container styles */
+  .carousel-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    border: 1px solid #ccc; /* Optional: Add border or box-shadow for visual separation */
+    position: relative; /* Ensure position relative for absolute arrow positioning */
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .carousel-arrow.prev {
+    left: 10px;
+  }
+  
+  .carousel-arrow.next {
+    right: 10px;
+  }
+  
+  /* Featured Movies Section */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .featured-movies h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .col-xl-3,
+  .col-lg-4,
+  .col-md-6,
+  .col-sm-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .featured-movie {
+    background-color: #f8f9fa; /* Background color for each movie card */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for card effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .featured-movie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .featured-movie img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for movie images */
+    object-fit: cover; /* Ensure images fill the container */
+    border-radius: 8px; /* Optional: Add rounded corners to movie images */
+    margin-bottom: 10px;
+  }
+  
+  .featured-movie h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .featured-movie p {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .featured-movie {
+      padding: 10px;
+      border-radius: 6px;
+    }
+  
+    .featured-movie h3 {
+      font-size: 1.6rem;
+    }
+  
+    .featured-movie p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .featured-movie h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif; /* Example font family */
+    color: #333; /* Optional: Adjust text color */
+  }
+  
+  .featured-movie p {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif; /* Example font family */
+    color: #555; /* Optional: Adjust text color */
+  }
+  

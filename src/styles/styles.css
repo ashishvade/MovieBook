@@ -1,0 +1,138 @@
+
+/* styles/styles.css */
+.main-content {
+  padding: 20px;
+  margin-bottom: 80px; /* Adjust margin to leave space for the footer */
+  min-height: calc(100vh - 160px); /* Ensure content fills viewport, minus header and footer heights */
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.movie {
+  width: 300px; /* Fixed width for each movie card */
+  background-color: #fff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie img {
+  width: 100%;
+  height: 200px; /* Fixed height for movie banner */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.movie h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.movie p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.movie .showtimes {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.movie .showtimes h4 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.movie .showtimes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie .showtimes li {
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .movie {
+    width: calc(50% - 20px); /* Two movies per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .movie {
+    width: calc(100% - 20px); /* Single column on mobile */
+  }
+}
+
+.header {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 1rem;
+   text-align: center; 
+
+
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+}
+
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 1rem;
+  text-align: center;
+  position: fixed; /* Fixed position at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light background color */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.left-container,
+.right-container {
+  flex: 1; /* Take up remaining space */
+}
+
+.center-container {
+  flex: 2; /* Take up more space for the title */
+  text-align: center; /* Center align content */
+}
+
+.login-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue login button */
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
