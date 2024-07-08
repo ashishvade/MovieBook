@@ -2,7 +2,7 @@
 
 export const bookTickets = async (bookingData) => {
     try {
-      const response = await fetch('http://localhost:5001/v1/book/BookTicket', {
+      const response = await fetch('https://securityboat-jl68.onrender.com/v1/book/BookTicket', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

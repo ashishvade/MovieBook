@@ -55,7 +55,14 @@ const BookingForm = ({ selectedSeats, setSelectedSeats, screenNo, onSuccessfulBo
         </div>
         <div>
           <label>Showtime:</label>
-          <input type="text" value={showtime} onChange={(e) => setShowtime(e.target.value)} required />
+          <select value={showtime}onClick={()=>setShowtime(showtime)} required>
+            <option value={"9 am to 12 am"}>9 am to 12 am</option>
+            <option value={"12 am to 3 pm"}>12 am to 3 pm</option>
+            <option value={"3 pm to 6 pm"}>3 pm to 6 pm</option>
+            <option value={"6 pm to 9 pm"}>6 pm to 9 pm</option>
+            <option value={"9 pm to 12 pm"}>9 pm to 12 pm</option>
+          </select>
+          {/* <input type="text" value={showtime} onChange={(e) => setShowtime(e.target.value)} required /> */}
         </div>
         <div>
           <label>Screen No:</label>
