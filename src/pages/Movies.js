@@ -1,5 +1,4 @@
 
-// pages/Movies.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getMovies } from '../services/MovieService';
