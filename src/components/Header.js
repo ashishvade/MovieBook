@@ -1,25 +1,3 @@
-// // components/Header.js
-// import React from 'react';
-// import { Link } from 'react-router-dom'; 
-// const Header = () => {
-//   return (
-//     <header className="header">
-//       <div className="left-container">
-//         {/* Empty div to maintain layout */}
-//       </div>
-//       <div className="center-container">
-//         <h1>Movie Booking System</h1>
-//       </div>
-//       <div className="right-container">
-//         <Link to="/login" className="login-btn">Login</Link>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
-
 
 // components/Header.js
 import React from 'react';
