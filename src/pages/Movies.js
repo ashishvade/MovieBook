@@ -32,7 +32,7 @@ const Movies = () => {
       <div className="movie-list">
         {movies.map((movie) => (
           <div className="movie" key={movie._id}>
-            <img src={movie.movieBannerImg} alt={`${movie.movieTitle} banner`} />
+            <img src={movie.movieBannerImg} alt={`${movie.movieTitle} banner`}  className="featured-movie-image" />
             <h3>{movie.movieTitle}</h3>
             <p>Genre: {movie.genre}</p>
             <p>Duration: {movie.movieHr}</p>
