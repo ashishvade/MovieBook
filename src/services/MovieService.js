@@ -1,7 +1,7 @@
 // services/MovieService.js
 export const getMovies = async () => {
     try {
-      const response = await fetch('http://localhost:5001/v1/movie/getAllMovie', {
+      const response = await fetch('https://securityboat-jl68.onrender.com/v1/movie/getAllMovie', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
